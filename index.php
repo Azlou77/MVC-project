@@ -16,12 +16,15 @@ $cesar->nom="Cesar"; remplace by the constructor
 */
 
 $octave= new Personnage("Octave");
+/*
 $cesar->attaque($octave);
 if($octave->mort()){
     echo "Octave est mort";
 }else {
     echo "Octave a survecu avec " . $octave->vie;
 }
+*/
+
 /*
 $octave->vie=0;
 var_dump($octave->mort());
@@ -29,11 +32,13 @@ $octave->regenerer();
 $octave->nom="Octave"; remplace by the constructor
 var_dump($cesar->atk);
 var_dump($cesar->crier());
-*/
 var_dump($cesar);
 var_dump($octave);
-
-
+*/
+$cesar->setNom ("Caesar");
+echo $cesar->getVie();
+echo $cesar->getAtk();
+echo $cesar->getNom();// access Nom  if private class
 
 
 ?>
